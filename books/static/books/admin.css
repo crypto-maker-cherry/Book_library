@@ -1,0 +1,142 @@
+/*********************navigation*****************************/
+nav{
+    color:white;
+    background-color: rgb(114, 113, 113);
+    padding:10px !important;
+    font-size: 100%;
+    border:none;
+    border-radius: 5px;
+    transition-duration: 0.3s;
+    text-decoration: none;
+    margin-bottom: 5%;
+}
+
+#main-nav:hover,.navigation:hover{
+    color:greenyellow;
+    cursor:pointer;
+}
+
+.navigation{
+    padding-left: 5px;
+    font-size: 100% !important;
+    color:lightgrey;
+    transition-duration: 0.3s;
+    text-decoration: none;
+
+}
+
+#main-nav{
+    font-size: 120%;
+    transition-duration: 0.3s;
+    text-decoration: none;
+    color:white;
+}
+
+/*********************add table*****************************/
+
+
+ 
+ 
+#body{
+    margin:0px 20%;
+    text-align: center;
+    justify-content: center;
+ }
+
+ caption{
+    width:100%;
+}
+
+b{
+    display:flex;
+    width:100%;
+   
+    text-align: center;
+    justify-content: center;
+ }
+
+form{
+    display:grid;
+    
+    padding: 15px;
+    background-color: rgb(241, 245, 245);
+ 
+}
+
+.label{
+    padding-left: 5px;
+}
+
+.field{
+    display: flex;
+    padding-left:0.4px !important;
+}
+
+.fortable{
+    display:inline-flex;
+}
+
+#inputtable{
+    width: 1000px;
+    border-spacing:0px ;
+    border: solid 1.5px black;
+    margin-left: 25%;
+     
+
+}
+
+ 
+
+ 
+th ,.tabletd{
+    padding-left: 10px;
+}
+
+ 
+
+#booktable{
+    width: 1000px;
+    border-spacing:0px ;
+
+}
+
+input{
+    padding:0px;
+    width:99.4%;
+}
+
+input:hover{
+    background-color: lightgreen;
+}
+ 
+
+button{
+    width: 30%;
+    background-color: green;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+    transition-duration: 0.3s;
+    margin-left: 35%;
+    margin-top: 10px;
+}
+button:hover{
+    background-color: darkgreen;
+    cursor: pointer;
+}
+
+::-webkit-file-upload-button{
+    color:white;
+    background-color: green;
+}
+
+ ::-webkit-file-upload-button:hover{
+    background-color: darkgreen;
+    cursor:pointer;
+ }
+ 
+
+ 

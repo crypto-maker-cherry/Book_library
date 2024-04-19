@@ -1,0 +1,38 @@
+{% extends "base.html"%}
+{% load static%}
+
+{% block css%}{% static "books/login.css"%}{% endblock%}
+
+ {% block title %}Users{%endblock%}
+
+ {% block body%}
+    {% include "includes/nav2.html"%}
+    <h1><u>MY LIBRARY </u></h1>
+    <br>
+
+    <div id="login-error-msg-holder">
+      <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+    </div>
+
+    <form id="login-form" method="POST">
+    {% csrf_token %}
+      
+
+     <label for="email">User name:</label><br>
+     <input class="field" name="username" type="text" id="email" required><br>
+
+     <label for="pass">Password:</label><br>
+     <input class="field" name="password" type="password" id="pass" required><br>
+     
+      
+     <br><br>
+     <button type="submit" value="Login" id="login-form-submit">Login</button>
+     
+     
+ </form>
+
+ 
+ 
+    
+    
+{%endblock%}

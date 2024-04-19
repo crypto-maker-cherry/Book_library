@@ -1,0 +1,37 @@
+{% extends "base.html"%}
+{% load static%}
+
+{% block css%}{% static "books/students.css"%}{% endblock%}
+
+ {% block title %}Users{%endblock%}
+
+ {% block body%}
+    {% include "includes/nav.html"%}
+    <caption><b>Students Table</b></caption><br>
+    <br>
+    <table id="booktable">
+        <tr>
+            <th>S.no</th>
+            
+            <th>Name </th>
+            <th>Branch</th>
+            <th>Roll No</th>
+            <th>Phone Number</th>
+
+        </tr>
+        {% for students in students %}
+        <tr class="a">
+            <td class="tabletd">{{ students.id }}</td>
+            
+            <td class="tabletd">{{ students.name }}</td>
+            <td class="tabletd">{{ students.branch }}</td>
+            <td class="tabletd">{{ students.rollno }}</td>
+            <td class="tabletd">{{ students.phonenumber}}</td>
+
+        </tr>
+        {% endfor %}
+         
+        
+    </table>
+    </div>
+    {%endblock%}

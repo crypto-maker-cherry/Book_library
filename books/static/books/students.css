@@ -1,0 +1,156 @@
+/*********************navigation*****************************/
+nav{
+    color:white;
+    background-color: rgb(114, 113, 113);
+    padding:10px !important;
+    font-size: 100%;
+    border:none;
+    border-radius: 5px;
+    transition-duration: 0.3s;
+    text-decoration: none !important;
+    margin-bottom: 5%;
+}
+
+#main-nav:hover,.navigation:hover{
+    color:greenyellow;
+    cursor:pointer;
+}
+
+.navigation{
+    padding-left: 5px;
+    font-size: 100% !important;
+    color:lightgrey;
+    transition-duration: 0.3s;
+    text-decoration: none;
+
+}
+
+#main-nav{
+    font-size: 120%;
+    transition-duration: 0.3s;
+    text-decoration: none;
+    color:white;
+}
+
+/*********************Students Table*****************************/
+
+#attributes{
+    display : flex;
+}
+
+.table{
+    border:solid 1px black;
+    background-color: antiquewhite;
+    width: 20rem;
+    height: 5rem;
+    justify-content: center;
+    display: flex;
+    padding-top: 40px;
+}
+
+#body{
+    margin:0px 20%;
+    align-items: center;
+
+}
+form{
+    display:grid;
+    border:solid 1px black;
+    padding: 15px;
+    background-color: rgb(241, 245, 245);
+     
+}
+
+.field{
+    display: flex;
+}
+
+.fortable{
+    display:inline-flex;
+}
+
+#inputtable{
+    width: 1000px;
+    border-spacing:0px ;
+    
+}
+
+th{
+    text-align: left;
+    background-color:  green;
+}
+
+table,th,td{
+    border:1px solid black;
+}
+
+th ,.tabletd{
+    padding-left: 10px;
+}
+
+.a:nth-child(even){
+    background-color: antiquewhite;
+}
+
+.a:nth-child(odd){
+    background-color: lightgreen;
+}
+
+#booktable{
+    width: 1000px;
+    border-spacing:0px ;
+    margin:auto;
+
+}
+
+b{
+    margin-left:45%;
+}
+
+input{
+    padding:0px;
+    width:99.4%;
+}
+
+input:hover{
+    background-color: #d9ff00;
+}
+ 
+
+button{
+    width: 30%;
+    background-color: #ffe600;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+    transition-duration: 0.3s;
+    margin-left: 35%;
+    margin-top: 10px;
+}
+button:hover{
+    background-color: #e7c20a;
+    cursor: pointer;
+}
+
+nav{
+    padding:0% ;
+    display : flex;
+    padding-left:65%;
+    
+    
+}
+
+a{
+    text-decoration: none;
+    padding:4px;
+    font-weight: bold;
+    transition-duration: 0.3s;
+
+}
+
+a:hover{
+    color:#d9ff00;
+}

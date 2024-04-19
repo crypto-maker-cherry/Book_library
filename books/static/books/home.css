@@ -1,0 +1,85 @@
+/*********************navigation*****************************/
+nav{
+    color:white;
+    background-color: rgb(114, 113, 113);
+    padding:10px !important;
+    font-size: 100%;
+    border:none;
+    border-radius: 5px;
+    transition-duration: 0.3s;
+    text-decoration: none;
+    margin-bottom: 5%;
+}
+
+#main-nav:hover,.navigation:hover{
+    color:greenyellow;
+}
+
+.navigation{
+    padding-left: 5px;
+    font-size: 100% !important;
+    color:lightgrey;
+    transition-duration: 0.3s;
+    text-decoration: none;
+
+}
+
+#main-nav{
+    font-size: 120%;
+    transition-duration: 0.3s;
+    text-decoration: none;
+
+}
+
+
+/*********************search*****************************/
+
+.body-content{
+    
+    text-align: center;
+    justify-content: center;
+    
+}
+
+input{
+    width: 300px;
+    height: 30px;
+ 
+    border-radius: 10px;
+}
+
+button{
+    background-color: green;
+    color:white;
+    border:none;
+    border-radius: 5px;
+    height:2rem;
+    width:5rem;
+}
+
+button:hover{
+    cursor:pointer;
+}
+/*********************Books*****************************/
+
+#books-rack{
+    display:grid ;
+    grid-template-columns: 1fr 1fr 1fr;
+    border:solid 2px black;
+    padding-top: 10px;
+    overflow: hidden;
+}
+
+.book{
+    padding-left: 10px;
+}
+ 
+.details{
+    text-decoration: none;
+    font-weight: bold;
+    color:rgb(0, 255, 170);
+}
+
+.details:hover{
+    color:rgb(4, 212, 143);
+}

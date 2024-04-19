@@ -1,0 +1,37 @@
+{% extends "base.html"%}
+{% load static%}
+
+{% block css%}{% static "books/admin.css"%}{% endblock%}
+
+ {% block title %}Users{%endblock%}
+
+ {% block body%}
+   <form method="POST">
+   {% csrf_token%}
+    {% include "includes/nav.html"%}
+    <caption><b>Add Students</b> </caption>
+    <table border="9" id="inputtable">
+        <tr>
+         <td class="label" >Name : <td><input name="name" class="field" type="text" id="title" required></td></td>
+        </tr>
+        <tr>
+         <td  class="label">Branch : <td><input name="branch" class="field" type="text" id="author" required></td></td>
+        </tr>
+ 
+        <tr>
+         <td  class="label">Roll No : <td> <input name="rollno" class="field" type="text" id="bookid" required></td></td>
+        </tr>
+ 
+        
+ 
+        <tr>
+         <td    class="label">Phone Number : <td><input name="phonenumber" class="field" type="number" id="copies" required></td></td>
+        </tr>
+ 
+         
+     </table>
+     <button type="submit">Submit</button><br><br>
+    
+   <form> 
+    
+     {%endblock%}
