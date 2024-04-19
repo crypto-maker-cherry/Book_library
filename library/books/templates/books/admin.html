@@ -1,0 +1,48 @@
+{% extends "base.html"%}
+{% load static%}
+
+{% block css%}{% static "books/admin.css"%}{% endblock%}
+
+ {% block title %}Users{%endblock%}
+
+ {% block body%}
+    {% include "includes/nav.html"%}
+    <caption><b>Add Books</b> </caption>
+    <form method="POST">
+        {% csrf_token %}
+
+        <table border="9" id="inputtable" method="POST">
+
+            <tr>
+                <td class="label" >Title : <td><input name="title" class="field" type="text" id="title" required></td></td>
+            </tr>
+            <tr>
+                <td  class="label">Author : <td><input name="author" class="field" type="text" id="author" required></td></td>
+            </tr>
+            <tr>
+                <td  class="label">description :<td><input name="description" class="field" type="text" id="" required></td></td>
+            </tr>
+       
+ 
+            <tr>
+                <td  class="label">Category :<td><input name="category" class="field" type="text" id="category" required></td></td>
+            </tr>
+ 
+            <tr>
+                <td    class="label">No.of copies : <td><input name="copies" class="field" type="number" id="copies" required></td></td>
+            </tr>
+            <tr>
+                <td    class="label">Available copies : <td><input name="availcopies" class="field" type="number" id="copies" required></td></td>
+            </tr>
+   
+
+            <tr>
+                <td    class="label">Image of the Book : <td><input name="image"  class="field" type="file" id="copies" required></td></td>
+            </tr>
+ 
+         
+        </table>
+        <button type="submit">Submit</button><br><br>
+    </form>
+    
+     {%endblock%}

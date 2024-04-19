@@ -1,0 +1,24 @@
+{% extends "base.html"%}
+{% load static%}
+
+{% block css%}{% static "books/bookinfo.css"%}{% endblock%}
+
+ {% block title %}{{ bookinfo.title}}{%endblock%}
+
+ {% block body%}
+    {% include "includes/nav2.html"%}
+    <div id="body">
+        <img src="{{ bookinfo.image.url }}" height="500" width="300">
+        <div>
+            <h1><b>Title : {{bookinfo.title}}</b></h1>  
+            <h3>Author : {{bookinfo.author}}</h3>
+            <h3><b>Description : </b>{{bookinfo.description}}</h3>
+            <h3><b>Category : </b>{{bookinfo.category}}</h3>
+            <h3><b>Total copies : </b>{{bookinfo.total_copies}}</h3>
+            <h3><b>Available copies : </b>{{bookinfo.available_copies}}</h3>
+
+        </div>
+
+    <div>
+
+{% endblock %}

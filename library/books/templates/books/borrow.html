@@ -1,0 +1,66 @@
+{% extends "base.html"%}
+{% load static%}
+
+{% block css%}{% static "books/borrow.css"%}{% endblock%}
+
+ {% block title %}Users{%endblock%}
+
+ {% block body%}
+    {% include "includes/nav.html"%}
+    <caption><b>Borrow book</b> </caption>
+    <form method="POST" >
+    {% csrf_token %}  
+    <table border="9" id="inputtable">
+        <tr>
+         <td class="label" >Name : <td><input name="name" class="field" type="text" id="title" required></td></td>
+        </tr>
+        <tr>
+         <td  class="label">Branch : <td><input name="branch" class="field" type="text" id="author" required></td></td>
+        </tr>
+ 
+        <tr>
+         <td  class="label">Roll No : <td> <input name="rollno" class="field" type="text" id="bookid" required></td></td>
+        </tr>
+ 
+        <tr>
+         <td  class="label">Book name :<td><input name="bookname" class="field" type="text" id="category" required></td></td>
+        </tr>
+ 
+        <tr>
+         <td    class="label">Phone Number : <td><input name="phonenumber" class="field" type="number" id="copies" required></td></td>
+        </tr>
+ 
+         
+     </table>
+     <button type="submit">Submit</button><br><br>
+    </form>
+    
+    <table id="booktable">
+        <caption><b>Borrowers info</b></caption>
+        <tr>
+            <th>S.no</th>
+            <th>Name </th>
+            <th>Branch</th>
+            <th>Roll No</th>
+            <th>Phone Number</th>
+            <th>Book name</th>
+
+        </tr>
+
+        {% for borrow in borrow %}
+        <tr class="a">
+            <td class="tabletd">{{borrow.id}}</td>
+            <td class="tabletd">{{borrow.student.name}}</td>
+            <td class="tabletd">{{borrow.student.branch}}</td>
+            <td class="tabletd">{{borrow.student.rollno}}</td>
+            <td class="tabletd">{{borrow.student.phonenumber}}</td>
+            <td class="tabletd">{{borrow.book.title}}</td>
+
+        </tr>
+        {% endfor %}
+        
+        
+    </table>
+    </div>
+
+{%endblock%}

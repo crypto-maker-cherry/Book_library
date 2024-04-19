@@ -1,0 +1,25 @@
+{% extends "base.html"%}
+{% load static%}
+
+{% block css%}{% static "books/home2.css"%}{% endblock%}
+
+ {% block title %}home{%endblock%}
+
+ {% block body%}
+    {% include "includes/nav2.html"%}
+    <div class="body-content"> 
+        <input type="text" placeholder="enter a book title" height="200" width="200">
+        <button type="submit" value="search" id="search-bar">Search</button>
+        <h1><b>Book List</b></h1>
+        <div id="books-rack">
+            {% for book in book %}
+            <div class="book">
+                <img src="{{book.image.url}}" height="300" width="200">
+                <h3>{{book.title}}</h3>
+                <a class="details" href="{% url "bookinfo" book.title%}">book details</a>
+            </div>  
+            {% endfor %}
+            
+        </div>
+    </div>
+    {%endblock%}
